@@ -17,8 +17,11 @@
 #if TARGET_OS_IPHONE
 - (void)setProgress:(float)newProgress;
 #else
+
 - (void)setDoubleValue:(double)newProgress;
+
 - (void)setMaxValue:(double)newMax;
+
 #endif
 
 // Called when the request receives some data - bytes is the length of that data

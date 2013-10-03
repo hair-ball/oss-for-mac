@@ -11,17 +11,15 @@
 
 @implementation ASIS3Bucket
 
-+ (id)bucketWithOwnerID:(NSString *)anOwnerID ownerName:(NSString *)anOwnerName
-{
-	ASIS3Bucket *bucket = [[[self alloc] init] autorelease];
-	[bucket setOwnerID:anOwnerID];
-	[bucket setOwnerName:anOwnerName];
-	return bucket;
++ (id)bucketWithOwnerID:(NSString *)anOwnerID ownerName:(NSString *)anOwnerName {
+    ASIS3Bucket *bucket = [[[self alloc] init] autorelease];
+    [bucket setOwnerID:anOwnerID];
+    [bucket setOwnerName:anOwnerName];
+    return bucket;
 }
 
-- (NSString *)description
-{
-	return [NSString stringWithFormat:@"Name: %@ creationDate: %@ ownerID: %@ ownerName: %@",[self name],[self creationDate],[self ownerID],[self ownerName]];
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Name: %@ creationDate: %@ ownerID: %@ ownerName: %@", [self name], [self creationDate], [self ownerID], [self ownerName]];
 }
 
 
