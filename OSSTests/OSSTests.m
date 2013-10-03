@@ -1,34 +1,69 @@
-//
-//  OSSTests.m
-//  OSSTests
-//
-//  Created by undancer on 13-10-3.
-//  Copyright (c) 2013 undancer. All rights reserved.
-//
+#import "Kiwi.h"
 
-#import <XCTest/XCTest.h>
+SPEC_BEGIN(MathSpec)
 
-@interface OSSTests : XCTestCase
+describe(@"Math", ^{
+    it(@"is pretty cool", ^{
+        NSUInteger a = 16;
+        NSUInteger b = 26;
+        [[theValue(a + b) should] equal:theValue(42)];
+    });
+});
 
-@end
+describe(@"AFNetwork OSS Client", ^{
 
-@implementation OSSTests
+    describe(@"Buckets API", ^{
+    
+        describe(@"Create Bucket", ^{
+            
+        });
+        
+        describe(@"Get Bucket", ^{
+            
+        });
+        
+        describe(@"List Buckets", ^{
+            
+        });
+        
+        describe(@"Delete Bucket", ^{
+            
+        });
+        
+        describe(@"Modify Bucket permission", ^{
+        
+        });
+        
+        describe(@"Get Bucket permission", ^{
+        
+        });
+        
+    });
+    
+    describe(@"Object API", ^{
+        
+        describe(@"Upload Object", ^{
+            
+        });
+        
+        describe(@"View Object", ^{
+            
+        });
+        
+        describe(@"List Objects", ^{
+            
+        });
+        
+        describe(@"Delete Object", ^{
+            
+        });
+        
+        describe(@"Delete Objects", ^{
+            
+        });
+    });
+    
+    
+});
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
-
-@end
+SPEC_END

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CCF5F1F774445C8806503E9 /* libPods-OSSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C71B4C33A8A45C8BAF7E13D /* libPods-OSSTests.a */; };
+		5010F56517FDB7E200A33CFE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010F56317FDB7C400A33CFE /* SenTestingKit.framework */; };
+		5010F56A17FDBC2B00A33CFE /* AFOSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010F56917FDBC2B00A33CFE /* AFOSSClient.m */; };
+		5010F56B17FDBC2B00A33CFE /* AFOSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010F56917FDBC2B00A33CFE /* AFOSSClient.m */; };
 		78BB4390FFBB49298561048C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A00BE4CC424921AD1ADEA8 /* libPods.a */; };
 		E4156D9917FDBA97000DF6A0 /* LoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */; };
 		E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */; };
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C71B4C33A8A45C8BAF7E13D /* libPods-OSSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OSSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5010F56317FDB7C400A33CFE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5010F56817FDBC2B00A33CFE /* AFOSSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOSSClient.h; sourceTree = "<group>"; };
+		5010F56917FDBC2B00A33CFE /* AFOSSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOSSClient.m; sourceTree = "<group>"; };
+		9EB1B66DD8F24978872F6397 /* Pods-OSSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSSTests.xcconfig"; path = "Pods/Pods-OSSTests.xcconfig"; sourceTree = "<group>"; };
 		E2A00BE4CC424921AD1ADEA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4156D9617FDBA97000DF6A0 /* LoginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWindowController.h; sourceTree = "<group>"; };
 		E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWindowController.m; sourceTree = "<group>"; };
@@ -69,8 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5010F56517FDB7E200A33CFE /* SenTestingKit.framework in Frameworks */,
 				E505F8BF0F0A3C3CD9176887 /* XCTest.framework in Frameworks */,
 				E505FEA6D3235A5548423BFA /* Cocoa.framework in Frameworks */,
+				0CCF5F1F774445C8806503E9 /* libPods-OSSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +97,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5010F56717FDBBE100A33CFE /* AFOSSClient */ = {
+			isa = PBXGroup;
+			children = (
+				5010F56817FDBC2B00A33CFE /* AFOSSClient.h */,
+				5010F56917FDBC2B00A33CFE /* AFOSSClient.m */,
+			);
+			name = AFOSSClient;
+			path = OSS/AFOSSClient;
+			sourceTree = "<group>";
+		};
 		E505F003645C5C0E0CA2BE6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,19 +179,23 @@
 			children = (
 				E505F003645C5C0E0CA2BE6F /* Products */,
 				E505FFFB3C3ADF4314A9B018 /* Frameworks */,
+				5010F56717FDBBE100A33CFE /* AFOSSClient */,
 				E505F9B090C41DE27246E2F4 /* OSS */,
 				E505F3E55594CF9918514F21 /* OSSTests */,
 				FCB7FD7B3B5C42CBA033C6D8 /* Pods.xcconfig */,
+				9EB1B66DD8F24978872F6397 /* Pods-OSSTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		E505FFFB3C3ADF4314A9B018 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5010F56317FDB7C400A33CFE /* SenTestingKit.framework */,
 				E505F74C1B6FF84B8AB63434 /* Cocoa.framework */,
 				E505F04D1126164CF5E1D092 /* Other Frameworks */,
 				E505F12A593AD8E18BF2D172 /* XCTest.framework */,
 				E2A00BE4CC424921AD1ADEA8 /* libPods.a */,
+				0C71B4C33A8A45C8BAF7E13D /* libPods-OSSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E505FD19C1539286049909FC /* Build configuration list for PBXNativeTarget "OSSTests" */;
 			buildPhases = (
+				6B07B8011A6A46E88EAF2923 /* Check Pods Manifest.lock */,
 				E505FBC9C4316035CDC16FAC /* Sources */,
 				E505F20D27E97286B691C87B /* Frameworks */,
 				E505FA1F9D68503843305DE3 /* Resources */,
+				1B81BC7C55ED41FF86B40BBC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +304,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B81BC7C55ED41FF86B40BBC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-OSSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B07B8011A6A46E88EAF2923 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8D59BF6EF53741AAB0861ABB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E505F814FDB2AFE0B91AB274 /* OSSTests.m in Sources */,
+				5010F56B17FDBC2B00A33CFE /* AFOSSClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +384,7 @@
 				E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */,
 				E505FC5AA62E2D7D2ED6D203 /* AppDelegate.m in Sources */,
 				E4156D9917FDBA97000DF6A0 /* LoginWindowController.m in Sources */,
+				5010F56A17FDBC2B00A33CFE /* AFOSSClient.m in Sources */,				
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +486,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSS/OSS-Prefix.pch";
 				INFOPLIST_FILE = "OSS/OSS-Info.plist";
@@ -437,6 +500,7 @@
 		};
 		E505F426A66009FAD2E0B4FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB1B66DD8F24978872F6397 /* Pods-OSSTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSS.app/Contents/MacOS/OSS";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -447,6 +511,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSS/OSS-Prefix.pch";
 				INFOPLIST_FILE = "OSSTests/OSSTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -455,6 +524,7 @@
 		};
 		E505F6F57AED2CE83D02E0CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB1B66DD8F24978872F6397 /* Pods-OSSTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSS.app/Contents/MacOS/OSS";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -465,6 +535,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSS/OSS-Prefix.pch";
 				INFOPLIST_FILE = "OSSTests/OSSTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SenTestingKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -509,6 +584,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSS/OSS-Prefix.pch";
 				INFOPLIST_FILE = "OSS/OSS-Info.plist";
