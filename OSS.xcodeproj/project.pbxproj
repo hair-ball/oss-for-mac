@@ -55,6 +55,7 @@
 		E505F12A593AD8E18BF2D172 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E505F19A4D575F6AC53064E0 /* OSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E505F1A4488761C1A6610DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E505F29A60328F4260D21D62 /* OSSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSConstants.h; sourceTree = "<group>"; };
 		E505F368D85A4175593F2A5F /* OSSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "OSSTests-Info.plist"; sourceTree = "<group>"; };
 		E505F36DAC20AC4E6B8BF6EC /* OSS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSS-Prefix.pch"; sourceTree = "<group>"; };
 		E505F38C824414BA2F1E1F71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +103,7 @@
 			children = (
 				5010F56817FDBC2B00A33CFE /* AFOSSClient.h */,
 				5010F56917FDBC2B00A33CFE /* AFOSSClient.m */,
+				E505F29A60328F4260D21D62 /* OSSConstants.h */,
 			);
 			name = AFOSSClient;
 			path = OSS/AFOSSClient;
