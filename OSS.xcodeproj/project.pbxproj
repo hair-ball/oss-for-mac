@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		78BB4390FFBB49298561048C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A00BE4CC424921AD1ADEA8 /* libPods.a */; };
+		E4156D9917FDBA97000DF6A0 /* LoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */; };
 		E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */; };
+		E4F5455517FDCF8200A71CCE /* LoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F5455717FDCF8200A71CCE /* LoginWindowController.xib */; };
 		E505F434649BCF4F7CFB008E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E505F1A4488761C1A6610DD2 /* main.m */; };
 		E505F47CE74F44ACC5461C40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E505F3964B12F4B063E25D33 /* Images.xcassets */; };
 		E505F49F04D94C21A9D2F82A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E505FF863F31A60293AB9BC1 /* InfoPlist.strings */; };
@@ -34,9 +36,12 @@
 
 /* Begin PBXFileReference section */
 		E2A00BE4CC424921AD1ADEA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4156D9617FDBA97000DF6A0 /* LoginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWindowController.h; sourceTree = "<group>"; };
+		E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWindowController.m; sourceTree = "<group>"; };
 		E4EB82CD17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetworkObserver.h"; sourceTree = "<group>"; };
 		E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetworkObserver.m"; sourceTree = "<group>"; };
 		E4EB82D017FD94A300BDD6CD /* OSS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OSS.entitlements; sourceTree = "<group>"; };
+		E4F5455617FDCF8200A71CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/LoginWindowController.xib; sourceTree = "<group>"; };
 		E505F0DEEB5AC8AAC1DF3F57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E505F12A593AD8E18BF2D172 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E505F19A4D575F6AC53064E0 /* OSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +134,9 @@
 				E505F267B0507477D001FF58 /* MainMenu.xib */,
 				E4EB82CD17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.h */,
 				E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */,
+				E4156D9617FDBA97000DF6A0 /* LoginWindowController.h */,
+				E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */,
+				E4F5455717FDCF8200A71CCE /* LoginWindowController.xib */,
 			);
 			path = OSS;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 				E505F49F04D94C21A9D2F82A /* InfoPlist.strings in Resources */,
 				E505F64C294C67A3F00D82BC /* Credits.rtf in Resources */,
 				E505F47CE74F44ACC5461C40 /* Images.xcassets in Resources */,
+				E4F5455517FDCF8200A71CCE /* LoginWindowController.xib in Resources */,
 				E505FEFD2B451169D774D0A5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +325,7 @@
 				E505F434649BCF4F7CFB008E /* main.m in Sources */,
 				E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */,
 				E505FC5AA62E2D7D2ED6D203 /* AppDelegate.m in Sources */,
+				E4156D9917FDBA97000DF6A0 /* LoginWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +340,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E4F5455717FDCF8200A71CCE /* LoginWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4F5455617FDCF8200A71CCE /* Base */,
+			);
+			name = LoginWindowController.xib;
+			sourceTree = "<group>";
+		};
 		E505F01540484AAC0BB445F0 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (

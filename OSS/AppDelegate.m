@@ -8,6 +8,13 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+NetworkObserver.h"
+#import "LoginWindowController.h"
+
+@interface AppDelegate ()
+
+@property IBOutlet LoginWindowController *loginWindowController;
+
+@end
 
 @implementation AppDelegate
 
@@ -15,6 +22,8 @@
 
     [self startNetworkObserver];
 
+    self.loginWindowController = [[LoginWindowController alloc] initWithWindowNibName:@"LoginWindowController"];
+    [self setWindow:self.loginWindowController.window];
 }
 
 @end
