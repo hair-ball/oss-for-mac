@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0CCF5F1F774445C8806503E9 /* libPods-OSSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C71B4C33A8A45C8BAF7E13D /* libPods-OSSTests.a */; };
 		5010F56517FDB7E200A33CFE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010F56317FDB7C400A33CFE /* SenTestingKit.framework */; };
+		5010F56A17FDBC2B00A33CFE /* AFOSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010F56917FDBC2B00A33CFE /* AFOSSClient.m */; };
+		5010F56B17FDBC2B00A33CFE /* AFOSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010F56917FDBC2B00A33CFE /* AFOSSClient.m */; };
 		78BB4390FFBB49298561048C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A00BE4CC424921AD1ADEA8 /* libPods.a */; };
 		E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */; };
 		E505F434649BCF4F7CFB008E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E505F1A4488761C1A6610DD2 /* main.m */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		0C71B4C33A8A45C8BAF7E13D /* libPods-OSSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OSSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5010F56317FDB7C400A33CFE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5010F56817FDBC2B00A33CFE /* AFOSSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOSSClient.h; sourceTree = "<group>"; };
+		5010F56917FDBC2B00A33CFE /* AFOSSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOSSClient.m; sourceTree = "<group>"; };
 		9EB1B66DD8F24978872F6397 /* Pods-OSSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSSTests.xcconfig"; path = "Pods/Pods-OSSTests.xcconfig"; sourceTree = "<group>"; };
 		E2A00BE4CC424921AD1ADEA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EB82CD17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetworkObserver.h"; sourceTree = "<group>"; };
@@ -88,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5010F56717FDBBE100A33CFE /* AFOSSClient */ = {
+			isa = PBXGroup;
+			children = (
+				5010F56817FDBC2B00A33CFE /* AFOSSClient.h */,
+				5010F56917FDBC2B00A33CFE /* AFOSSClient.m */,
+			);
+			name = AFOSSClient;
+			path = OSS/AFOSSClient;
+			sourceTree = "<group>";
+		};
 		E505F003645C5C0E0CA2BE6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +171,7 @@
 			children = (
 				E505F003645C5C0E0CA2BE6F /* Products */,
 				E505FFFB3C3ADF4314A9B018 /* Frameworks */,
+				5010F56717FDBBE100A33CFE /* AFOSSClient */,
 				E505F9B090C41DE27246E2F4 /* OSS */,
 				E505F3E55594CF9918514F21 /* OSSTests */,
 				FCB7FD7B3B5C42CBA033C6D8 /* Pods.xcconfig */,
@@ -348,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E505F814FDB2AFE0B91AB274 /* OSSTests.m in Sources */,
+				5010F56B17FDBC2B00A33CFE /* AFOSSClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +374,7 @@
 				E505F434649BCF4F7CFB008E /* main.m in Sources */,
 				E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */,
 				E505FC5AA62E2D7D2ED6D203 /* AppDelegate.m in Sources */,
+				5010F56A17FDBC2B00A33CFE /* AFOSSClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
