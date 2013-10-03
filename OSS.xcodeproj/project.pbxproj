@@ -384,7 +384,7 @@
 				E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */,
 				E505FC5AA62E2D7D2ED6D203 /* AppDelegate.m in Sources */,
 				E4156D9917FDBA97000DF6A0 /* LoginWindowController.m in Sources */,
-				5010F56A17FDBC2B00A33CFE /* AFOSSClient.m in Sources */,				
+				5010F56A17FDBC2B00A33CFE /* AFOSSClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
