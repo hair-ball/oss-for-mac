@@ -2,7 +2,7 @@ language: objective-c
 before_install:
     - brew update
     # - brew uninstall xctool && brew install xctool --HEAD
-	# - cd Tests && pod install && cd $TRAVIS_BUILD_DIR
+    # - cd Tests && pod install && cd $TRAVIS_BUILD_DIR
 #script: rake test
-# script: xcodebuild -workspace OSS.xcworkspace -scheme OSS clean test
+#script: xcodebuild -workspace OSS.xcworkspace -scheme OSS clean test
 script: xcodebuild -workspace oss-for-mac.xcworkspace -scheme OSS -sdk macosx10.8 clean test
