@@ -11,8 +11,8 @@
 @interface LoginWindowController : NSWindowController
 
 
-@property IBOutlet NSTextField* accessKeyIdTextField;
+@property IBOutlet NSTextField *accessKeyIdTextField;
 
-@property IBOutlet NSTextField* accessKeySecretTextField;
+@property IBOutlet NSTextField *accessKeySecretTextField;
 
 @end

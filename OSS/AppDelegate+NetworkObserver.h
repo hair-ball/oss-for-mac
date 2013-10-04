@@ -10,6 +10,6 @@
 
 @interface AppDelegate (NetworkObserver)
 
--(void) startNetworkObserver;
+- (void)startNetworkObserver;
 
 @end

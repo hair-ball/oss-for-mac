@@ -9,11 +9,11 @@
 
 @interface AFOSSClient : AFHTTPClient
 
-@property(nonatomic,strong)NSURL *baseURL;
+@property(nonatomic, strong) NSURL *baseURL;
 
-@property (nonatomic, copy) NSString *bucket;
+@property(nonatomic, copy) NSString *bucket;
 
-@property (nonatomic, copy) NSString *region;
+@property(nonatomic, copy) NSString *region;
 
 - (id)initWithAccessKeyID:(NSString *)accessKey
                    secret:(NSString *)secret;
@@ -21,10 +21,10 @@
 - (NSDictionary *)authorizationHeadersForRequest:(NSMutableURLRequest *)request;
 
 - (void)enqueueOSSRequestOperationWithMethod:(NSString *)method
-                                       path:(NSString *)path
-                                 parameters:(NSDictionary *)parameters
-                                    success:(void (^)(id responseObject))success
-                                    failure:(void (^)(NSError *error))failure;
+                                        path:(NSString *)path
+                                  parameters:(NSDictionary *)parameters
+                                     success:(void (^)(id responseObject))success
+                                     failure:(void (^)(NSError *error))failure;
 
 - (void)getBucketsWithSuccess:(void (^)(id responseObject))success
                       failure:(void (^)(NSError *error))failure;
