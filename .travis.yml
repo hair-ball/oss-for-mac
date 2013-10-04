@@ -7,4 +7,4 @@ before_script:
     - chmod -R +x ./scripts
 #script: rake test
 #script: xcodebuild -workspace OSS.xcworkspace -scheme OSS clean test
-script: ./scripts/travis/build.sh && xcodebuild -list && xcodebuild -project oss-for-mac.xcodeproj -list && xcodebuild -workspace oss-for-mac.xcworkspace -list && xcodebuild -workspace oss-for-mac.xcworkspace -scheme OSS -sdk macosx10.8 clean test
+script: ./scripts/travis/build.sh
