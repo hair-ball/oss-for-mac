@@ -1,0 +1,307 @@
+Toss-for-mac
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/Info.plist /Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Info.plist
+cPhaseScriptExecution Check\ Pods\ Manifest.lock /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Script-EBA83B263FB9473984D863C7.sh
+cProcessPCH /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.pch OSS/oss-for-mac-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.o /Users/undancer/Documents/oss-for-mac/OSS/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.o /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.o /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.o /Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.o /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
+c00000000524A422E00000000000004B3
+t1380598318
+s1203
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000524A422E00000000000001DE
+t1380598318
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c00000000524A422F00000000000025C8
+t1380598319
+s9672
+
+N/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m
+c00000000524E9976000000000000239F
+t1380882806
+s9119
+
+N/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m
+c00000000524EAF3900000000000003CF
+t1380888377
+s975
+
+N/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m
+c00000000524E99760000000000000275
+t1380882806
+s629
+
+N/Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m
+c00000000524E99760000000000000287
+t1380882806
+s647
+
+N/Users/undancer/Documents/oss-for-mac/OSS/main.m
+c00000000524EB01100000000000000CB
+t1380888593
+s203
+
+N/Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Info.plist
+c00000000524EAF0D0000000000000527
+t1380888333
+s1319
+
+N/Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Prefix.pch
+c00000000524EAF1300000000000000A9
+t1380888339
+s169
+
+N/Users/undancer/Documents/oss-for-mac/build/Release/libPods.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/Info.plist
+t2
+s0
+
+N/Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac
+t2
+s0
+
+N/Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.o
+t1380891157
+s56860
+
+N/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.o
+t1380891157
+s19888
+
+N/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.o
+t1380891157
+s35320
+
+N/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.o
+t1380891157
+s26396
+
+N/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.o
+t1380891157
+s2904
+
+N/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/oss-for-mac.LinkFileList
+c00000000524EBA11000000000000027F
+t1380891153
+s639
+
+N/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Script-EBA83B263FB9473984D863C7.sh
+c00000000524EBA110000000000000103
+t1380891153
+s259
+
+N/var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.pch
+t1380891157
+s13079964
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies070c0e91f1feb741^7a8c3a91f1feb741^---0#1#1#--18"Check dependencies36"9D8DFBAC-D2CE-41B9-A717-6ECF408687F1-
+
+CCodeSign /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app
+r0
+
+CCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.o /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402583957.434863
+e402583957.571845
+r1
+xCompileC
+xbuild/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.o
+x/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m
+d/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFNetworking.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFURLConnectionOperation.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFHTTPRequestOperation.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFJSONRequestOperation.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFXMLRequestOperation.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFPropertyListRequestOperation.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFHTTPClient.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFImageRequestOperation.h
+oIn file included from /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m:9:
+oIn file included from /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.h:8:
+oIn file included from /Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFNetworking.h:35:
+o[1m/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFHTTPClient.h:84:9: [0m[0;1;35mwarning: [0m[1mSystemConfiguration framework not found in project, or not included in
+o      precompiled header. Network reachability functionality will not be available. [-W#pragma-messages][0m
+o#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")
+o[0;1;32m        ^
+o[0m[1m/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m:81:17: [0m[0;1;35mwarning: [0m[1mmethod definition for
+o      'setObjectWithMethod:file:destinationPath:parameters:progress:success:failure:' not found [-Wincomplete-implementation][0m
+o@implementation AFOSSClient
+o[0;1;32m                ^
+o[0m[1m/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m:72:1: [0m[0;1;30mnote: [0mmethod 'setObjectWithMethod:file:destinationPath:parameters:progress:success:failure:'
+o      declared here[0m
+o- (void)setObjectWithMethod:(NSString *)method
+o[0;1;32m^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m210"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.o [1mOSS/AFOSSClient/AFOSSClient.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler5d6b6f95f1feb741^1b649295f1feb741^-1397"In file included from /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m:9:In file included from /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.h:8:In file included from /Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFNetworking.h:35:[1m/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFHTTPClient.h:84:9: [0m[0;1;35mwarning: [0m[1mSystemConfiguration framework not found in project, or not included in      precompiled header. Network reachability functionality will not be available. [-W#pragma-messages][0m#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")[0;1;32m        ^[0m[1m/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m:81:17: [0m[0;1;35mwarning: [0m[1mmethod definition for      'setObjectWithMethod:file:destinationPath:parameters:progress:success:failure:' not found [-Wincomplete-implementation][0m@implementation AFOSSClient[0;1;32m                ^[0m[1m/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m:72:1: [0m[0;1;30mnote: [0mmethod 'setObjectWithMethod:file:destinationPath:parameters:progress:success:failure:'      declared here[0m- (void)setObjectWithMethod:(NSString *)method[0;1;32m^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@148"SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.-402583957#18446744073709551615#0#3(2@92"In file included from /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m:9:-402583957#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@83"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m0000000000000000^8#8#8#8#128#0#21"Apple LLVM 5.0 Notice--2@92"In file included from /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.h:8:-402583957#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@83"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.h0000000000000000^7#8#7#8#127#0#21"Apple LLVM 5.0 Notice--2@104"In file included from /Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFNetworking.h:35:-402583957#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFNetworking.h0000000000000000^34#8#34#8#1452#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@94"file://localhost/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking/AFHTTPClient.h0000000000000000^83#8#83#8#4884#0#25"#pragma message Directive--2@111"Method definition for 'setObjectWithMethod:file:destinationPath:parameters:progress:success:failure:' not found-402583957#18446744073709551615#0#1(2@100"Method 'setObjectWithMethod:file:destinationPath:parameters:progress:success:failure:' declared here-402583957#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@83"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m0000000000000000^71#0#71#0#2642#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@83"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m0000000000000000^80#16#80#16#3142#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@83"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m0000000000000000^3592"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.o [1mOSS/AFOSSClient/AFOSSClient.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/undancer/Documents/oss-for-mac    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=173 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-generated-files.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-own-target-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-all-target-headers.hmap -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-project-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/Release/include -I/Users/undancer/Documents/oss-for-mac/Pods/Headers -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/CommonCrypto -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Kiwi -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Reachability -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/SSKeychain -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/lua -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources/x86_64 -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources -F/Users/undancer/Documents/oss-for-mac/build/Release -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch -MMD -MT dependencies -MF /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.d --serialize-diagnostics /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.dia -c /Users/undancer/Documents/oss-for-mac/OSS/AFOSSClient/AFOSSClient.m -o /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AFOSSClient.o36"4603CD59-808E-4BE1-8E76-CE74147FE76E-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.o /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402583957.312300
+e402583957.496701
+r1
+xCompileC
+xbuild/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.o
+x/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m
+d/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.h
+d/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.h
+d/Users/undancer/Documents/oss-for-mac/Pods/Headers/Reachability/Reachability.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m230"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.o [1mOSS/AppDelegate+NetworkObserver.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilera60c5095f1feb741^41287f95f1feb741^---0#0#1#-19%DVTDocumentLocation2@87"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m0000000000000000^3664"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.o [1mOSS/AppDelegate+NetworkObserver.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/undancer/Documents/oss-for-mac    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=173 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-generated-files.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-own-target-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-all-target-headers.hmap -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-project-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/Release/include -I/Users/undancer/Documents/oss-for-mac/Pods/Headers -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/CommonCrypto -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Kiwi -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Reachability -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/SSKeychain -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/lua -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources/x86_64 -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources -F/Users/undancer/Documents/oss-for-mac/build/Release -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch -MMD -MT dependencies -MF /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.d --serialize-diagnostics /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.dia -c /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.m -o /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate+NetworkObserver.o36"48DD3FED-3507-4E19-A78D-09B637B7142E-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.o /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402583957.312497
+e402583957.434342
+r1
+xCompileC
+xbuild/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m
+d/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.h
+d/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate+NetworkObserver.h
+d/Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m198"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.o [1mOSS/AppDelegate.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerde1e5095f1feb741^f9306f95f1feb741^---0#0#1#-19%DVTDocumentLocation2@71"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m0000000000000000^3568"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.o [1mOSS/AppDelegate.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/undancer/Documents/oss-for-mac    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=173 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-generated-files.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-own-target-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-all-target-headers.hmap -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-project-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/Release/include -I/Users/undancer/Documents/oss-for-mac/Pods/Headers -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/CommonCrypto -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Kiwi -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Reachability -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/SSKeychain -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/lua -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources/x86_64 -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources -F/Users/undancer/Documents/oss-for-mac/build/Release -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch -MMD -MT dependencies -MF /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.d --serialize-diagnostics /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.dia -c /Users/undancer/Documents/oss-for-mac/OSS/AppDelegate.m -o /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/AppDelegate.o36"DC0C3534-7EB7-4395-9299-FAD20C42A1D6-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.o /Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402583957.312550
+e402583957.433973
+r1
+xCompileC
+xbuild/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.o
+x/Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m
+d/Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m218"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.o [1mOSS/LoginWindowController.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler791e5095f1feb741^95286f95f1feb741^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m0000000000000000^3628"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.o [1mOSS/LoginWindowController.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/undancer/Documents/oss-for-mac    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=173 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-generated-files.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-own-target-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-all-target-headers.hmap -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-project-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/Release/include -I/Users/undancer/Documents/oss-for-mac/Pods/Headers -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/CommonCrypto -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Kiwi -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Reachability -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/SSKeychain -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/lua -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources/x86_64 -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources -F/Users/undancer/Documents/oss-for-mac/build/Release -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch -MMD -MT dependencies -MF /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.d --serialize-diagnostics /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.dia -c /Users/undancer/Documents/oss-for-mac/OSS/LoginWindowController.m -o /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/LoginWindowController.o36"688EBEE1-EFD3-4247-8E8B-DC5C863F65AE-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CCompileC build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.o /Users/undancer/Documents/oss-for-mac/OSS/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402583957.312298
+e402583957.433428
+r1
+xCompileC
+xbuild/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.o
+x/Users/undancer/Documents/oss-for-mac/OSS/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/undancer/Documents/oss-for-mac/OSS/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/undancer/Documents/oss-for-mac/OSS/main.m184"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.o [1mOSS/main.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler030b5095f1feb741^44f96e95f1feb741^---0#0#1#-19%DVTDocumentLocation2@64"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/main.m0000000000000000^3526"[1mCompileC[0m build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.o [1mOSS/main.m[0m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/undancer/Documents/oss-for-mac    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=173 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-generated-files.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-own-target-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-all-target-headers.hmap -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-project-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/Release/include -I/Users/undancer/Documents/oss-for-mac/Pods/Headers -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/CommonCrypto -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Kiwi -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Reachability -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/SSKeychain -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/lua -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources/x86_64 -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources -F/Users/undancer/Documents/oss-for-mac/build/Release -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch -MMD -MT dependencies -MF /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.dia -c /Users/undancer/Documents/oss-for-mac/OSS/main.m -o /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/main.o36"3F4BC69D-F3F9-4E1A-9AA3-1C283C3C8ACC-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CCompileXIB /Users/undancer/Documents/oss-for-mac/OSS/Base.lproj/LoginWindowController.xib
+r0
+
+CCompileXIB /Users/undancer/Documents/oss-for-mac/OSS/Base.lproj/MainMenu.xib
+r0
+
+CCopyStringsFile /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/Resources/en.lproj/InfoPlist.strings OSS/en.lproj/InfoPlist.strings
+r0
+
+CCpResource OSS/Images.xcassets build/Release/oss-for-mac.app/Contents/Resources/Images.xcassets
+r0
+
+CCpResource OSS/en.lproj/Credits.rtf build/Release/oss-for-mac.app/Contents/Resources/en.lproj/Credits.rtf
+r0
+
+CGenerateDSYMFile /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app.dSYM /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac
+r0
+
+CLd /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac normal x86_64
+s402583957.580384
+e402583957.614174
+r0
+xLd
+x/Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac
+xnormal
+xx86_64
+d/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/oss-for-mac.LinkFileList
+old: library not found for -lPods
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Link /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac81"[1mLd[0m build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac normal x86_6405a59495f1feb741^713a9d95f1feb741^-113"ld: library not found for -lPodsclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@28"Library not found for -lPods-402583957#0#33#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#31"Apple Mach-O Linker (ld) Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-402583957#33#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#30"Apple Mach-O Linker (ld) Error--0#0#1#--1141"[1mLd[0m build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac normal x86_64    cd /Users/undancer/Documents/oss-for-mac    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/undancer/Documents/oss-for-mac/build/Release -F/Users/undancer/Documents/oss-for-mac/build/Release -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -filelist /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/oss-for-mac.LinkFileList -mmacosx-version-min=10.8 -ObjC -framework CoreServices -framework Security -framework SystemConfiguration -fobjc-arc -fobjc-link-runtime -framework Cocoa -lPods -Xlinker -dependency_info -Xlinker /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Objects-normal/x86_64/oss-for-mac_dependency_info.dat -o /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/MacOS/oss-for-mac36"A5A3F2B6-FA46-454A-B003-AD48A0F2B89B-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CPhaseScriptExecution Check\ Pods\ Manifest.lock /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Script-EBA83B263FB9473984D863C7.sh
+s402583953.254722
+e402583953.342981
+r1
+xPhaseScriptExecution
+xCheck Pods Manifest.lock
+x/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Script-EBA83B263FB9473984D863C7.sh
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Run custom shell script 'Check Pods Manifest.lock'140"[1mPhaseScriptExecution[0m Check\ Pods\ Manifest.lock build/oss-for-mac.build/Release/oss-for-mac.build/Script-EBA83B263FB9473984D863C7.sh76a94191f1feb741^abcd5791f1feb741^---0#0#1#--324"[1mPhaseScriptExecution[0m Check\ Pods\ Manifest.lock build/oss-for-mac.build/Release/oss-for-mac.build/Script-EBA83B263FB9473984D863C7.sh    cd /Users/undancer/Documents/oss-for-mac    /bin/sh -c /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Script-EBA83B263FB9473984D863C7.sh36"19673A1E-4480-4E4F-98DD-771D880C96C9-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CPhaseScriptExecution Copy\ Pods\ Resources /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/Script-8D59BF6EF53741AAB0861ABB.sh
+r0
+
+CProcessInfoPlistFile /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/Info.plist /Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Info.plist
+s402583953.242158
+e402583953.245974
+r1
+xProcessInfoPlistFile
+x/Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/Info.plist
+x/Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Process /Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Info.plist113"[1mProcessInfoPlistFile[0m build/Release/oss-for-mac.app/Contents/Info.plist [1mOSS/oss-for-mac-Info.plist[0m6e133e91f1feb741^48f83e91f1feb741^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Info.plist0000000000000000^479"[1mProcessInfoPlistFile[0m build/Release/oss-for-mac.app/Contents/Info.plist [1mOSS/oss-for-mac-Info.plist[0m    cd /Users/undancer/Documents/oss-for-mac    builtin-infoPlistUtility /Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Info.plist -genpkginfo /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app/Contents/Info.plist36"0153832E-FD79-4526-90BB-4D8A579B72AC-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CProcessPCH /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.pch OSS/oss-for-mac-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402583953.352357
+e402583957.303903
+r1
+xProcessPCH
+x/var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.pch
+xOSS/oss-for-mac-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile OSS/oss-for-mac-Prefix.pch306"[1mProcessPCH[0m /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.pch OSS/oss-for-mac-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler404c5a91f1feb741^d9cc4d95f1feb741^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Prefix.pch0000000000000000^3693"[1mProcessPCH[0m /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.pch OSS/oss-for-mac-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/undancer/Documents/oss-for-mac    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=173 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-generated-files.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-own-target-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-all-target-headers.hmap -iquote /Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/oss-for-mac-project-headers.hmap -I/Users/undancer/Documents/oss-for-mac/build/Release/include -I/Users/undancer/Documents/oss-for-mac/Pods/Headers -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/AFNetworking -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/CommonCrypto -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Kiwi -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/Reachability -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/SSKeychain -I/Users/undancer/Documents/oss-for-mac/Pods/Headers/lua -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources/x86_64 -I/Users/undancer/Documents/oss-for-mac/build/oss-for-mac.build/Release/oss-for-mac.build/DerivedSources -F/Users/undancer/Documents/oss-for-mac/build/Release -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks --serialize-diagnostics /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.d -c /Users/undancer/Documents/oss-for-mac/OSS/oss-for-mac-Prefix.pch -o /var/folders/11/srtl67f57pz2d8hbdzlm60vw0000gp/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/oss-for-mac-Prefix-dgitbfncodhxnucwlhufpprxlbfn/oss-for-mac-Prefix.pch.pch36"338642D9-0D6A-46BF-9CA2-5714DD509151-
+bDEC2E71D-9A30-4457-B623-8A7E58A5677C
+
+CTouch /Users/undancer/Documents/oss-for-mac/build/Release/oss-for-mac.app
+r0
+
