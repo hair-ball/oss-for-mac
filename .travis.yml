@@ -4,4 +4,4 @@ before_install:
     - brew uninstall xctool && brew install xctool --HEAD
 #    - cd Tests && pod install && cd $TRAVIS_BUILD_DIR
 #script: rake test
-script: xctool test
+script: xctool test -workspace OSS.xcworkspace
