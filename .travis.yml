@@ -3,6 +3,8 @@ before_install:
     - brew update
     # - brew uninstall xctool && brew install xctool --HEAD
     # - cd Tests && pod install && cd $TRAVIS_BUILD_DIR
+before_script:
+    - chmod -R +x ./scripts
 #script: rake test
 #script: xcodebuild -workspace OSS.xcworkspace -scheme OSS clean test
-script: xcodebuild -list && xcodebuild -project oss-for-mac.xcodeproj -list && xcodebuild -workspace oss-for-mac.xcworkspace -list && xcodebuild -workspace oss-for-mac.xcworkspace -scheme OSS -sdk macosx10.8 clean test
+script: ./scripts/travis/build.sh && xcodebuild -list && xcodebuild -project oss-for-mac.xcodeproj -list && xcodebuild -workspace oss-for-mac.xcworkspace -list && xcodebuild -workspace oss-for-mac.xcworkspace -scheme OSS -sdk macosx10.8 clean test
