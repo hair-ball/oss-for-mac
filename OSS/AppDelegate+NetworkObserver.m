@@ -9,13 +9,15 @@
 #import "AppDelegate+NetworkObserver.h"
 #import "Reachability.h"
 
+#define kDEFAULT_OSS_ENDPOINT_HOST @"oss.aliyuncs.com"
+
 @implementation AppDelegate (NetworkObserver)
 
 - (void)startNetworkObserver {
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityIsChanged:) name:kReachabilityChangedNotification object:nil];
 
-    Reachability *reachability = [Reachability reachabilityWithHostname:@"oss.aliyun.com"];
+    Reachability *reachability = [Reachability reachabilityWithHostname:kDEFAULT_OSS_ENDPOINT_HOST];
 
 //    [reachability setReachableBlock:^(Reachability* reachability){
 //    }];
