@@ -24,6 +24,8 @@
 
     self.loginWindowController = [[LoginWindowController alloc] initWithWindowNibName:@"LoginWindowController"];
     [self setWindow:self.loginWindowController.window];
+
+
 }
 
 @end

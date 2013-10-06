@@ -55,6 +55,7 @@
 		E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetworkObserver.m"; sourceTree = "<group>"; };
 		E4EB82D017FD94A300BDD6CD /* OSS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OSS.entitlements; sourceTree = "<group>"; };
 		E4F5455617FDCF8200A71CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginWindowController.xib; sourceTree = "<group>"; };
+		E505F06F455B2165A2F2A0EE /* AFOSSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOSSResponse.h; sourceTree = "<group>"; };
 		E505F0DEEB5AC8AAC1DF3F57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E505F12A593AD8E18BF2D172 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E505F1A4488761C1A6610DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 				5010F56817FDBC2B00A33CFE /* AFOSSClient.h */,
 				5010F56917FDBC2B00A33CFE /* AFOSSClient.m */,
 				E505F29A60328F4260D21D62 /* OSSConstants.h */,
+				E505F06F455B2165A2F2A0EE /* AFOSSResponse.h */,
 			);
 			name = AFOSSClient;
 			path = OSS/AFOSSClient;
@@ -572,6 +574,7 @@
 				GCC_PREFIX_HEADER = "OSS/oss-for-mac-Prefix.pch";
 				INFOPLIST_FILE = "OSS/oss-for-mac-Info.plist";
 				PRODUCT_NAME = "oss-for-mac";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -622,6 +625,7 @@
 				GCC_PREFIX_HEADER = "OSS/oss-for-mac-Prefix.pch";
 				INFOPLIST_FILE = "OSS/oss-for-mac-Info.plist";
 				PRODUCT_NAME = "oss-for-mac";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

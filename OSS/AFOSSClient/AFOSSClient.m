@@ -9,6 +9,7 @@
 #import "AFOSSClient.h"
 #import <CommonCrypto/CommonHMAC.h>
 #import "OSSConstants.h"
+
 static NSData *AFHMACSHA1EncodedDataFromStringWithKey(NSString *string, NSString *key) {
     NSData *data = [string dataUsingEncoding:NSASCIIStringEncoding];
     CCHmacContext context;
@@ -63,8 +64,10 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 }
 
 @interface AFOSSClient ()
+
 @property(readwrite, nonatomic, copy) NSString *accessKey;
 @property(readwrite, nonatomic, copy) NSString *secret;
+
 @end
 
 @implementation AFOSSClient
@@ -91,6 +94,7 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 }
 
 - (id)initWithBaseURL:(NSURL *)url {
+
     self = [super initWithBaseURL:url];
     if (!self) {
         return nil;
@@ -149,7 +153,7 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 
         NSData *hmac = AFHMACSHA1EncodedDataFromStringWithKey(mutableString, self.secret);
         NSString *signature = AFBase64EncodedStringFromData(hmac);
-        NSLog(@"DICT DICT %@", @{@"Authorization" : [NSString stringWithFormat:@"OSS %@:%@", self.accessKey, signature],
+        NSLog(@"DICT DICT %@", @{kAUTHORIZATION : [NSString stringWithFormat:@"OSS %@:%@", self.accessKey, signature],
                 @"Date" : (date) ? date : @""
         });
         return @{kAUTHORIZATION : [NSString stringWithFormat:@"OSS %@:%@", self.accessKey, signature],
@@ -168,16 +172,16 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
                                      failure:(void (^)(NSError *error))failure {
     NSURLRequest *request = [self requestWithMethod:method path:path parameters:parameters];
 
-    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (success) {
-           
-            success(responseObject);
-        }
-    }                                                                        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
+    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request
+            success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                if (success) {
+                    success(responseObject);
+                }
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                if (failure) {
+                    failure(error);
+                }
+            }];
 
     [self enqueueHTTPRequestOperation:requestOperation];
 }
@@ -198,16 +202,14 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 - (void)putBucket:(NSString *)bucket
        parameters:(NSDictionary *)parameters
           success:(void (^)(id responseObject))success
-          failure:(void (^)(NSError *error))failure
-{
+          failure:(void (^)(NSError *error))failure {
     [self enqueueOSSRequestOperationWithMethod:@"PUT" path:bucket parameters:parameters success:success failure:failure];
-    
+
 }
 
 - (void)deleteBucket:(NSString *)bucket
              success:(void (^)(id responseObject))success
-             failure:(void (^)(NSError *error))failure
-{
+             failure:(void (^)(NSError *error))failure {
     [self enqueueOSSRequestOperationWithMethod:@"DELETE" path:bucket parameters:nil success:success failure:failure];
 }
 
@@ -216,30 +218,29 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 
 - (void)headObjectWithPath:(NSString *)path
                    success:(void (^)(id responseObject))success
-                   failure:(void (^)(NSError *error))failure
-{
+                   failure:(void (^)(NSError *error))failure {
     [self enqueueOSSRequestOperationWithMethod:@"HEAD" path:path parameters:nil success:success failure:failure];
 }
 
 - (void)getObjectWithPath:(NSString *)path
                  progress:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))progress
                   success:(void (^)(id responseObject, NSData *responseData))success
-                  failure:(void (^)(NSError *error))failure
-{
+                  failure:(void (^)(NSError *error))failure {
     NSURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:nil];
-    
-    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (success) {
-            success(responseObject, operation.responseData);
-        }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
-    
+
+    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request
+            success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                if (success) {
+                    success(responseObject, operation.responseData);
+                }
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                if (failure) {
+                    failure(error);
+                }
+            }];
+
     [requestOperation setDownloadProgressBlock:progress];
-    
+
     [self enqueueHTTPRequestOperation:requestOperation];
 }
 
@@ -247,23 +248,23 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
              outputStream:(NSOutputStream *)outputStream
                  progress:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))progress
                   success:(void (^)(id responseObject))success
-                  failure:(void (^)(NSError *error))failure
-{
+                  failure:(void (^)(NSError *error))failure {
     NSURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:nil];
-    
-    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (success) {
-            success(responseObject);
-        }
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
-    
+
+    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request
+            success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                if (success) {
+                    success(responseObject);
+                }
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                if (failure) {
+                    failure(error);
+                }
+            }];
+
     [requestOperation setDownloadProgressBlock:progress];
     [requestOperation setOutputStream:outputStream];
-    
+
     [self enqueueHTTPRequestOperation:requestOperation];
 }
 
@@ -272,8 +273,7 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
                 parameters:(NSDictionary *)parameters
                   progress:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progress
                    success:(void (^)(id responseObject))success
-                   failure:(void (^)(NSError *error))failure
-{
+                   failure:(void (^)(NSError *error))failure {
     [self setObjectWithMethod:@"POST" file:path destinationPath:destinationPath parameters:parameters progress:progress success:success failure:failure];
 }
 
@@ -282,26 +282,24 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
                parameters:(NSDictionary *)parameters
                  progress:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progress
                   success:(void (^)(id responseObject))success
-                  failure:(void (^)(NSError *error))failure
-{
+                  failure:(void (^)(NSError *error))failure {
     [self setObjectWithMethod:@"PUT" file:path destinationPath:destinationPath parameters:parameters progress:progress success:success failure:failure];
 }
 
 - (void)deleteObjectWithPath:(NSString *)path
                      success:(void (^)(id responseObject))success
-                     failure:(void (^)(NSError *error))failure
-{
+                     failure:(void (^)(NSError *error))failure {
     [self enqueueOSSRequestOperationWithMethod:@"DELETE" path:path parameters:nil success:success failure:failure];
 }
 
--(void)setObjectWithMethod:(NSString *)method file:(NSString *)filePath destinationPath:(NSString *)destinationPath parameters:(NSDictionary *)parameters progress:(void (^)(NSUInteger, long long, long long))progressBlock success:(void (^)(id))success failure:(void (^)(NSError *))failure{
+- (void)setObjectWithMethod:(NSString *)method file:(NSString *)filePath destinationPath:(NSString *)destinationPath parameters:(NSDictionary *)parameters progress:(void (^)(NSUInteger, long long, long long))progressBlock success:(void (^)(id))success failure:(void (^)(NSError *))failure {
     NSMutableURLRequest *fileRequest = [NSMutableURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]];
     [fileRequest setCachePolicy:NSURLCacheStorageNotAllowed];
-    
+
     NSURLResponse *response = nil;
     NSError *fileError = nil;
     NSData *data = [NSURLConnection sendSynchronousRequest:fileRequest returningResponse:&response error:&fileError];
-    
+
     if (data && response) {
         NSMutableURLRequest *request = [self multipartFormRequestWithMethod:method path:destinationPath parameters:parameters constructingBodyWithBlock:^(id <AFMultipartFormData> formData) {
             if (![parameters valueForKey:@"key"]) {
@@ -309,19 +307,20 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
             }
             [formData appendPartWithFileData:data name:@"file" fileName:[filePath lastPathComponent] mimeType:[response MIMEType]];
         }];
-        
-        AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-            if (success) {
-                success(responseObject);
-            }
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            if (failure) {
-                failure(error);
-            }
-        }];
-        
+
+        AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request
+                success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                    if (success) {
+                        success(responseObject);
+                    }
+                } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                    if (failure) {
+                        failure(error);
+                    }
+                }];
+
         [requestOperation setUploadProgressBlock:progressBlock];
-        
+
         [self enqueueHTTPRequestOperation:requestOperation];
     }
 
