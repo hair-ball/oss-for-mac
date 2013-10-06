@@ -8,10 +8,7 @@
 
 #import "AFOSSClient.h"
 #import <CommonCrypto/CommonHMAC.h>
-
-static NSString *const AFAmazonS3ClientDefaultBaseURLString = @"http://oss.aliyuncs.com";
-NSString *const AFAmazonS3USStandardRegion = @"oss.aliyuncs.com";
-
+#import "OSSConstants.h"
 static NSData *AFHMACSHA1EncodedDataFromStringWithKey(NSString *string, NSString *key) {
     NSData *data = [string dataUsingEncoding:NSASCIIStringEncoding];
     CCHmacContext context;
@@ -68,14 +65,6 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 @interface AFOSSClient ()
 @property(readwrite, nonatomic, copy) NSString *accessKey;
 @property(readwrite, nonatomic, copy) NSString *secret;
-
-- (void)setObjectWithMethod:(NSString *)method
-                       file:(NSString *)filePath
-            destinationPath:(NSString *)destinationPath
-                 parameters:(NSDictionary *)parameters
-                   progress:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progressBlock
-                    success:(void (^)(id responseObject))success
-                    failure:(void (^)(NSError *error))failure;
 @end
 
 @implementation AFOSSClient
@@ -87,13 +76,13 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 
 - (id)initWithAccessKeyID:(NSString *)accessKey
                    secret:(NSString *)secret {
-    self = [self initWithBaseURL:[NSURL URLWithString:AFAmazonS3ClientDefaultBaseURLString]];
+    self = [self initWithBaseURL:[NSURL URLWithString:kDEFAULT_OSS_ENDPOINT]];
     if (!self) {
         return nil;
     }
 
     // Workaround for designated initializer of subclass
-    self.baseURL = [NSURL URLWithString:AFAmazonS3ClientDefaultBaseURLString];
+    self.baseURL = [NSURL URLWithString:kDEFAULT_OSS_ENDPOINT];
 
     self.accessKey = accessKey;
     self.secret = secret;
@@ -121,7 +110,7 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 }
 
 - (NSURL *)baseURL {
-    return [NSURL URLWithString:AFAmazonS3ClientDefaultBaseURLString];
+    return [NSURL URLWithString:kDEFAULT_OSS_ENDPOINT];
 }
 
 - (NSDictionary *)authorizationHeadersForRequest:(NSMutableURLRequest *)request {
@@ -130,7 +119,7 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
         NSMutableDictionary *mutableOSSHeaderFields = [NSMutableDictionary dictionary];
         [[request allHTTPHeaderFields] enumerateKeysAndObjectsUsingBlock:^(NSString *key, id value, BOOL *stop) {
             key = [key lowercaseString];
-            if ([key hasPrefix:@"x-oss"]) {
+            if ([key hasPrefix:kOSS_PREFIX]) {
                 if ([mutableOSSHeaderFields objectForKey:key]) {
                     value = [[mutableOSSHeaderFields objectForKey:key] stringByAppendingFormat:@",%@", value];
                 }
@@ -146,8 +135,8 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 
         NSString *canonicalizedResource = [NSString stringWithFormat:@"%@%@", self.bucket ? self.bucket : @"", request.URL.path];
         NSString *method = [request HTTPMethod];
-        NSString *contentMD5 = [request valueForHTTPHeaderField:@"Content-MD5"];
-        NSString *contentType = [request valueForHTTPHeaderField:@"Content-Type"];
+        NSString *contentMD5 = [request valueForHTTPHeaderField:kCONTENT_MD5];
+        NSString *contentType = [request valueForHTTPHeaderField:kCONTENT_TYPE];
         NSString *date = AFRFC822FormatStringFromDate([NSDate date]);
 
         NSMutableString *mutableString = [NSMutableString string];
@@ -163,7 +152,7 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
         NSLog(@"DICT DICT %@", @{@"Authorization" : [NSString stringWithFormat:@"OSS %@:%@", self.accessKey, signature],
                 @"Date" : (date) ? date : @""
         });
-        return @{@"Authorization" : [NSString stringWithFormat:@"OSS %@:%@", self.accessKey, signature],
+        return @{kAUTHORIZATION : [NSString stringWithFormat:@"OSS %@:%@", self.accessKey, signature],
                 @"Date" : (date) ? date : @""
         };
     }
@@ -181,7 +170,7 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
 
     AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (success) {
-            NSLog(@"melon %@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+           
             success(responseObject);
         }
     }                                                                        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -206,6 +195,137 @@ NSString *AFBase64EncodedStringFromData(NSData *data) {
     [self enqueueOSSRequestOperationWithMethod:@"GET" path:bucket parameters:nil success:success failure:failure];
 }
 
+- (void)putBucket:(NSString *)bucket
+       parameters:(NSDictionary *)parameters
+          success:(void (^)(id responseObject))success
+          failure:(void (^)(NSError *error))failure
+{
+    [self enqueueOSSRequestOperationWithMethod:@"PUT" path:bucket parameters:parameters success:success failure:failure];
+    
+}
+
+- (void)deleteBucket:(NSString *)bucket
+             success:(void (^)(id responseObject))success
+             failure:(void (^)(NSError *error))failure
+{
+    [self enqueueOSSRequestOperationWithMethod:@"DELETE" path:bucket parameters:nil success:success failure:failure];
+}
+
+
+#pragma mark Object Operations
+
+- (void)headObjectWithPath:(NSString *)path
+                   success:(void (^)(id responseObject))success
+                   failure:(void (^)(NSError *error))failure
+{
+    [self enqueueOSSRequestOperationWithMethod:@"HEAD" path:path parameters:nil success:success failure:failure];
+}
+
+- (void)getObjectWithPath:(NSString *)path
+                 progress:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))progress
+                  success:(void (^)(id responseObject, NSData *responseData))success
+                  failure:(void (^)(NSError *error))failure
+{
+    NSURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:nil];
+    
+    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (success) {
+            success(responseObject, operation.responseData);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (failure) {
+            failure(error);
+        }
+    }];
+    
+    [requestOperation setDownloadProgressBlock:progress];
+    
+    [self enqueueHTTPRequestOperation:requestOperation];
+}
+
+- (void)getObjectWithPath:(NSString *)path
+             outputStream:(NSOutputStream *)outputStream
+                 progress:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))progress
+                  success:(void (^)(id responseObject))success
+                  failure:(void (^)(NSError *error))failure
+{
+    NSURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:nil];
+    
+    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if (success) {
+            success(responseObject);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if (failure) {
+            failure(error);
+        }
+    }];
+    
+    [requestOperation setDownloadProgressBlock:progress];
+    [requestOperation setOutputStream:outputStream];
+    
+    [self enqueueHTTPRequestOperation:requestOperation];
+}
+
+- (void)postObjectWithFile:(NSString *)path
+           destinationPath:(NSString *)destinationPath
+                parameters:(NSDictionary *)parameters
+                  progress:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progress
+                   success:(void (^)(id responseObject))success
+                   failure:(void (^)(NSError *error))failure
+{
+    [self setObjectWithMethod:@"POST" file:path destinationPath:destinationPath parameters:parameters progress:progress success:success failure:failure];
+}
+
+- (void)putObjectWithFile:(NSString *)path
+          destinationPath:(NSString *)destinationPath
+               parameters:(NSDictionary *)parameters
+                 progress:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))progress
+                  success:(void (^)(id responseObject))success
+                  failure:(void (^)(NSError *error))failure
+{
+    [self setObjectWithMethod:@"PUT" file:path destinationPath:destinationPath parameters:parameters progress:progress success:success failure:failure];
+}
+
+- (void)deleteObjectWithPath:(NSString *)path
+                     success:(void (^)(id responseObject))success
+                     failure:(void (^)(NSError *error))failure
+{
+    [self enqueueOSSRequestOperationWithMethod:@"DELETE" path:path parameters:nil success:success failure:failure];
+}
+
+-(void)setObjectWithMethod:(NSString *)method file:(NSString *)filePath destinationPath:(NSString *)destinationPath parameters:(NSDictionary *)parameters progress:(void (^)(NSUInteger, long long, long long))progressBlock success:(void (^)(id))success failure:(void (^)(NSError *))failure{
+    NSMutableURLRequest *fileRequest = [NSMutableURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]];
+    [fileRequest setCachePolicy:NSURLCacheStorageNotAllowed];
+    
+    NSURLResponse *response = nil;
+    NSError *fileError = nil;
+    NSData *data = [NSURLConnection sendSynchronousRequest:fileRequest returningResponse:&response error:&fileError];
+    
+    if (data && response) {
+        NSMutableURLRequest *request = [self multipartFormRequestWithMethod:method path:destinationPath parameters:parameters constructingBodyWithBlock:^(id <AFMultipartFormData> formData) {
+            if (![parameters valueForKey:@"key"]) {
+                [formData appendPartWithFormData:[[filePath lastPathComponent] dataUsingEncoding:NSUTF8StringEncoding] name:@"key"];
+            }
+            [formData appendPartWithFileData:data name:@"file" fileName:[filePath lastPathComponent] mimeType:[response MIMEType]];
+        }];
+        
+        AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            if (success) {
+                success(responseObject);
+            }
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            if (failure) {
+                failure(error);
+            }
+        }];
+        
+        [requestOperation setUploadProgressBlock:progressBlock];
+        
+        [self enqueueHTTPRequestOperation:requestOperation];
+    }
+
+}
 #pragma mark - AFHTTPClient
 
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method
