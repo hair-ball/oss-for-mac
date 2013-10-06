@@ -23,9 +23,30 @@
     [self startNetworkObserver];
 
     self.loginWindowController = [[LoginWindowController alloc] initWithWindowNibName:@"LoginWindowController"];
-    [self setWindow:self.loginWindowController.window];
+    [self.loginWindowController.window setDelegate:self];
+    [self.loginWindowController.window orderFrontRegardless];
 
+//    [self setWindow:self.loginWindowController.window];
 
+}
+
+#pragma mark - NSApplicationDelegate
+
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag {
+    if (!flag) {
+        [self.loginWindowController.window orderFrontRegardless];
+        return YES;
+    }
+    return NO;
+}
+
+#pragma mark - NSWindowDelegate
+
+- (BOOL)windowShouldClose:(id)sender {
+//    [NSApp terminate:self];
+//    [sender miniaturize:nil];
+    [sender setIsVisible:NO];
+    return YES;
 }
 
 @end
