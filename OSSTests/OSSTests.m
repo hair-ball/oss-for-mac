@@ -16,7 +16,7 @@ describe(@"AFNetwork OSS Client", ^{
         
         __block  AFOSSClient *client = nil;
         beforeAll(^{
-            client = [[AFOSSClient alloc] initWithAccessKeyID:@"aJiDhiCWJDNx5TRO" secret:@"nBjSnMOIoTomngTEtgwDv3rBnQrKDg"];
+            client = [[AFOSSClient alloc] initWithAccessKeyID:@"" secret:@""];
         
             
         });
