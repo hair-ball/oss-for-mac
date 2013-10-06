@@ -14,6 +14,7 @@
 		E4B1430317FEE24100C6DECA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5010F56317FDB7C400A33CFE /* SenTestingKit.framework */; };
 		E4B1430917FEE24100C6DECA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4B1430717FEE24100C6DECA /* InfoPlist.strings */; };
 		E4B1430B17FEE24100C6DECA /* oss_for_mac_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B1430A17FEE24100C6DECA /* oss_for_mac_Tests.m */; };
+		E4CFB5B51801B07B00BEEE9A /* 草图.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CFB5B41801B07B00BEEE9A /* 草图.xib */; };
 		E4EB82CF17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */; };
 		E4F5455517FDCF8200A71CCE /* LoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F5455717FDCF8200A71CCE /* LoginWindowController.xib */; };
 		E505F434649BCF4F7CFB008E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E505F1A4488761C1A6610DD2 /* main.m */; };
@@ -51,6 +52,7 @@
 		E4B1430817FEE24100C6DECA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4B1430A17FEE24100C6DECA /* oss_for_mac_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oss_for_mac_Tests.m; sourceTree = "<group>"; };
 		E4B1430C17FEE24100C6DECA /* oss-for-mac Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oss-for-mac Tests-Prefix.pch"; sourceTree = "<group>"; };
+		E4CFB5B41801B07B00BEEE9A /* 草图.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "草图.xib"; sourceTree = "<group>"; };
 		E4EB82CD17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetworkObserver.h"; sourceTree = "<group>"; };
 		E4EB82CE17FD8FB200BDD6CD /* AppDelegate+NetworkObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetworkObserver.m"; sourceTree = "<group>"; };
 		E4EB82D017FD94A300BDD6CD /* OSS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OSS.entitlements; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				E4156D9617FDBA97000DF6A0 /* LoginWindowController.h */,
 				E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */,
 				E4F5455717FDCF8200A71CCE /* LoginWindowController.xib */,
+				E4CFB5B41801B07B00BEEE9A /* 草图.xib */,
 			);
 			path = OSS;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			files = (
 				E505F49F04D94C21A9D2F82A /* InfoPlist.strings in Resources */,
 				E505F64C294C67A3F00D82BC /* Credits.rtf in Resources */,
+				E4CFB5B51801B07B00BEEE9A /* 草图.xib in Resources */,
 				E505F47CE74F44ACC5461C40 /* Images.xcassets in Resources */,
 				E4F5455517FDCF8200A71CCE /* LoginWindowController.xib in Resources */,
 				E505FEFD2B451169D774D0A5 /* MainMenu.xib in Resources */,
