@@ -59,11 +59,9 @@
 		E4EB82D017FD94A300BDD6CD /* OSS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OSS.entitlements; sourceTree = "<group>"; };
 		E4F5455617FDCF8200A71CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginWindowController.xib; sourceTree = "<group>"; };
 		E505F06F455B2165A2F2A0EE /* AFOSSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOSSResponse.h; sourceTree = "<group>"; };
-		E505F0DEEB5AC8AAC1DF3F57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E505F12A593AD8E18BF2D172 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E505F1A4488761C1A6610DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E505F29A60328F4260D21D62 /* OSSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSConstants.h; sourceTree = "<group>"; };
-		E505F368D85A4175593F2A5F /* oss-for-macTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "oss-for-macTests-Info.plist"; sourceTree = "<group>"; };
 		E505F36DAC20AC4E6B8BF6EC /* oss-for-mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oss-for-mac-Prefix.pch"; sourceTree = "<group>"; };
 		E505F38C824414BA2F1E1F71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E505F3964B12F4B063E25D33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images.xcassets; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 		E505F6BCAD3AB6B393D666E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		E505F74C1B6FF84B8AB63434 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E505F912CE8FA3FFC3312CE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		E505F9AFA438ECD971FA6F48 /* OSSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSTests.m; sourceTree = "<group>"; };
 		E505FB3639FAC2D53CB013DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E505FB666353AC7DB96B06AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E505FC1B481F1E241EA4978D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -154,24 +151,6 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		E505F16AEBBCC29C919E086A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E505F368D85A4175593F2A5F /* oss-for-macTests-Info.plist */,
-				E505F51B47F5F0C04AA14363 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E505F3E55594CF9918514F21 /* OSSTests */ = {
-			isa = PBXGroup;
-			children = (
-				E505F16AEBBCC29C919E086A /* Supporting Files */,
-				E505F9AFA438ECD971FA6F48 /* OSSTests.m */,
-			);
-			path = OSSTests;
-			sourceTree = "<group>";
-		};
 		E505F9B090C41DE27246E2F4 /* OSS */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +190,6 @@
 				E505FFFB3C3ADF4314A9B018 /* Frameworks */,
 				5010F56717FDBBE100A33CFE /* AFOSSClient */,
 				E505F9B090C41DE27246E2F4 /* OSS */,
-				E505F3E55594CF9918514F21 /* OSSTests */,
 				FCB7FD7B3B5C42CBA033C6D8 /* Pods.xcconfig */,
 				40FDF408C4F54E64A8FD5930 /* Pods-oss-for-mac Tests.xcconfig */,
 			);
@@ -283,7 +261,7 @@
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					E4B1430117FEE24100C6DECA = {
-						TestTargetID = E505FB9C1C50F26C53EA923B;
+						TestTargetID = E505FB9C1C50F26C53EA923B /* oss-for-mac */;
 					};
 					E505FB9C1C50F26C53EA923B = {
 						SystemCapabilities = {
@@ -465,14 +443,6 @@
 				E505FCF8C5DCD2E4619706A3 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		E505F51B47F5F0C04AA14363 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E505F0DEEB5AC8AAC1DF3F57 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		E505FF863F31A60293AB9BC1 /* InfoPlist.strings */ = {
