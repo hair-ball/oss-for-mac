@@ -26,8 +26,6 @@
     [self.loginWindowController.window setDelegate:self];
     [self.loginWindowController.window orderFrontRegardless];
 
-    //git_flow_test
-
 //    [self setWindow:self.loginWindowController.window];
 
 }
