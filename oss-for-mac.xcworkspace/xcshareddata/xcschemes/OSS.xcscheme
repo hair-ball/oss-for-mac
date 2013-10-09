@@ -20,6 +20,20 @@
                ReferencedContainer = "container:oss-for-mac.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E4B1430117FEE24100C6DECA"
+               BuildableName = "oss-for-mac Tests.octest"
+               BlueprintName = "oss-for-mac Tests"
+               ReferencedContainer = "container:oss-for-mac.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,16 +42,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E505F5A980F35A6183B567F3"
-               BuildableName = "oss-for-macTests.xctest"
-               BlueprintName = "OSSTests"
-               ReferencedContainer = "container:oss-for-mac.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference

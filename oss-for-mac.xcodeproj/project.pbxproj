@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5010F56A17FDBC2B00A33CFE /* AFOSSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5010F56917FDBC2B00A33CFE /* AFOSSClient.m */; };
+		5031136A1805913600D62CF5 /* AFOSSClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 503113691805913500D62CF5 /* AFOSSClientTest.m */; };
 		78BB4390FFBB49298561048C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A00BE4CC424921AD1ADEA8 /* libPods.a */; };
 		A1AB2262A25347A5A1E6D4E1 /* libPods-oss-for-mac Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABA0DED976346DBBD712B8E /* libPods-oss-for-mac Tests.a */; };
 		E4156D9917FDBA97000DF6A0 /* LoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */; };
@@ -42,8 +43,8 @@
 		5010F56317FDB7C400A33CFE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5010F56817FDBC2B00A33CFE /* AFOSSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOSSClient.h; sourceTree = "<group>"; };
 		5010F56917FDBC2B00A33CFE /* AFOSSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOSSClient.m; sourceTree = "<group>"; };
+		503113691805913500D62CF5 /* AFOSSClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOSSClientTest.m; sourceTree = "<group>"; };
 		7ABA0DED976346DBBD712B8E /* libPods-oss-for-mac Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oss-for-mac Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EB1B66DD8F24978872F6397 /* Pods-OSSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSSTests.xcconfig"; path = "Pods/Pods-OSSTests.xcconfig"; sourceTree = "<group>"; };
 		E2A00BE4CC424921AD1ADEA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4156D9617FDBA97000DF6A0 /* LoginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginWindowController.h; sourceTree = "<group>"; };
 		E4156D9717FDBA97000DF6A0 /* LoginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginWindowController.m; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				E4B1430A17FEE24100C6DECA /* oss_for_mac_Tests.m */,
+				503113691805913500D62CF5 /* AFOSSClientTest.m */,
 				E4B1430517FEE24100C6DECA /* Supporting Files */,
 			);
 			path = "oss-for-mac Tests";
@@ -211,7 +213,6 @@
 				E505F9B090C41DE27246E2F4 /* OSS */,
 				E505F3E55594CF9918514F21 /* OSSTests */,
 				FCB7FD7B3B5C42CBA033C6D8 /* Pods.xcconfig */,
-				9EB1B66DD8F24978872F6397 /* Pods-OSSTests.xcconfig */,
 				40FDF408C4F54E64A8FD5930 /* Pods-oss-for-mac Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -282,7 +283,7 @@
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					E4B1430117FEE24100C6DECA = {
-						TestTargetID = E505FB9C1C50F26C53EA923B /* oss-for-mac */;
+						TestTargetID = E505FB9C1C50F26C53EA923B;
 					};
 					E505FB9C1C50F26C53EA923B = {
 						SystemCapabilities = {
@@ -407,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B1430B17FEE24100C6DECA /* oss_for_mac_Tests.m in Sources */,
+				5031136A1805913600D62CF5 /* AFOSSClientTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

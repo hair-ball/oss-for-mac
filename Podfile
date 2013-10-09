@@ -15,5 +15,8 @@ pod 'lua', '~> 5.2.1'
 #    pod 'Kiwi/XCTest'
 #end
 target 'oss-for-mac Tests', :exclusive => true do
+    pod 'Kiwi'
+end
+target 'oss-for-mac Tests', :exclusive => true do
     pod 'Kiwi/SenTestingKit', '~> 2.2.2'
 end
