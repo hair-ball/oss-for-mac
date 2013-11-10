@@ -11,8 +11,8 @@ pod 'SSKeychain', '~> 1.2.1'
 pod 'AFNetworking', '~> 2.0.2'
 pod 'Reachability', '~> 3.1.1'
 
-target "oss-for-mac" do
-end
+# target "oss-for-mac" do
+# end
 
 target "oss-for-mac Tests" do
   pod 'Kiwi', '~> 2.2.3'
