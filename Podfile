@@ -6,11 +6,12 @@ platform :osx, '10.8'
 workspace 'oss-for-mac'
 xcodeproj 'oss-for-mac'
 
+pod 'CommonCrypto', '~> 1.1'
+pod 'SSKeychain', '~> 1.2.1'
+pod 'AFNetworking', '~> 2.0.2'
+pod 'Reachability', '~> 3.1.1'
+
 target "oss-for-mac" do
-  pod 'CommonCrypto', '~> 1.1'
-  pod 'SSKeychain', '~> 1.2.1'
-  pod 'AFNetworking', '~> 2.0.2'
-  pod 'Reachability', '~> 3.1.1'
 end
 
 target "oss-for-mac Tests" do
